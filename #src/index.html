@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('_head.html',{
+	"title":"СтройКонтроль"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('_header.html',{})
+			<main class="page">
+				<section class="hero">
+					<div class='hero__content _container'>
+						<h1 class="hero__title">Умная доставка материалов для сложных строительных площадок</h1>
+						<div class="hero__buttons buttons">
+							<a href="#" class="btn btn_dark">Заказать демо</a>
+							<a href="#" class="btn btn_light">Подробнее</a>
+						</div>
+						<div class="hero__img"><img src="./img/mainImg.png" alt="mainImg"></div>
+						<div class="hero__cars"><img src="./img/cars.png" alt="cars"></div>
+					</div>
+				</section>
+			</main>
+			@@include('_footer.html',{})
+		</div>
+		@@include('_popup.html',{})
+		@@include('_js.html',{})
+	</body>
+</html>
