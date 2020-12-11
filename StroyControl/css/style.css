@@ -456,6 +456,52 @@ h6 {
   height: auto;
 }
 
+.advantages {
+  padding: 145px 0;
+}
+
+.advantages__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -20px;
+}
+
+.advantages__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.333%;
+          flex: 0 0 33.333%;
+  padding: 0 20px;
+}
+
+.item-advantages {
+  text-align: center;
+}
+
+.item-advantages__img {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 20px auto;
+}
+
+.item-advantages__img img {
+  max-width: 100%;
+  height: auto;
+}
+
+.item-advantages__title {
+  font-size: 18px;
+  line-height: 133%;
+  color: #212B31;
+  margin: 0px 0px 10px 0px;
+}
+
+.item-advantages__descr {
+  font-size: 16px;
+  line-height: 150%;
+  color: #72787D;
+}
+
 ._container {
   max-width: 1456px;
   margin: 0 auto;
@@ -568,6 +614,14 @@ body.hidden {
   .header__btn {
     font-size: 14px;
     padding: 0 15px;
+  }
+
+  .advantages {
+    padding: 120px 0;
+  }
+
+  .item-advantages__descr {
+    font-size: 15px;
   }
 
   ._container {
@@ -710,6 +764,29 @@ body.hidden {
     max-width: none;
   }
 
+  .advantages {
+    padding: 100px 0;
+  }
+
+  .advantages__content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .advantages__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    margin: 0px 0px 40px 0px;
+  }
+
+  .advantages__item:last-child {
+    margin: 0px 0px 0px 0px;
+  }
+
   ._container {
     max-width: 750px;
   }
@@ -726,9 +803,38 @@ body.hidden {
     margin: 0 auto 15px auto;
   }
 
+  .advantages {
+    padding: 60px 0 80px 0;
+  }
+
+  .advantages__content {
+    margin: 0 -10px;
+  }
+
+  .advantages__item {
+    padding: 0 10px;
+  }
+
   ._container {
     max-width: none;
     padding: 0 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .advantages__content {
+    margin: 0px 0px 0px 0px;
+  }
+
+  .advantages__item {
+    padding: 0px 0px 0px 0px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+  }
+
+  .item-advantages__descr {
+    font-size: 16px;
   }
 }
 
