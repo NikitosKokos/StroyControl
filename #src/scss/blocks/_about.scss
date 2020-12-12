@@ -1,0 +1,112 @@
+.about {
+    padding: 0px 0px 140px 0px;
+    @media (max-width: $md2+px){
+        padding: 0px 0px 100px 0px;
+    }
+
+    &__title {
+    }
+
+    &__descr {
+        max-width: 827px;
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item:nth-child(even) {
+        .item-about__text{
+            order: 2;
+            @media (max-width: $md2+px){
+                padding: 0px 0px 0px 10px;
+            }
+        }
+        .item-about__img{
+            order: 1;
+        }
+    }
+}
+
+.item-about {
+    
+    display: flex;
+    align-items: center;
+    @media (max-width: 600px){
+       flex-direction: column;
+    }
+    margin: 0px 0px 65px 0px;
+    &:last-child{
+      margin: 0px 0px 0px 0px;
+    }
+    &__text {
+        flex: 0 0 50%;
+        @media (max-width: $md2+px){
+            padding: 0px 10px 0px 0px;
+        }
+        @media (max-width: 600px){
+            order: 2;
+        }
+        opacity: 0;
+        transform: translateX(-30px);
+        transition: all .3s ease-in-out;
+        &._animate{
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+    &__headeline {
+        font-size: 18px;
+        line-height: 133%;
+        color: #212B31;
+        margin: 0px 0px 20px 0px;
+        @media (max-width: $md2+px){
+            margin: 0px 0px 10px 0px;
+        }
+        @media (max-width: $md3+px){
+           font-size: 16px;
+        }
+        @media (max-width: 600px){
+            font-size: 18px;
+        }
+    }
+
+    &__descr {
+        font-size: 16px;
+        line-height: 150%;
+        color: #72787D;
+        @media (max-width: $md2+px){
+            font-size: 15px;
+        }
+        @media (max-width: $md3+px){
+            font-size: 14px;
+         }
+        @media (max-width: 600px){
+            font-size: 16px;
+        }
+    }
+
+    &__img {
+        flex: 0 0 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+        @media (max-width: 600px){
+            order: 1;
+            margin: 0px 0px 25px 0px;
+        }
+        opacity: 0;
+        transform: translateX(30px);
+        transition: all .3s ease-in-out;
+        &._animate{
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+}

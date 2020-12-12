@@ -15,5 +15,35 @@
     @media (max-width: $md4+px){
        font-size: 20px;
     }
-
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: all .3s ease-in-out;
+    &._animate{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.descr{
+        font-size: 20px;
+        line-height: 160%;
+        text-align: center;
+        color: #72787D;
+        margin: 0px auto 40px auto;
+        @media (max-width: 1240px){
+            font-size: 18px;
+            margin: 0px auto 30px auto;
+        }
+        @media (max-width: $md2+px){
+            br{
+                display: none;
+            }
+        }
+        @media (max-width: $md3+px){
+            font-size: 16px;
+        }
+        opacity: 0;
+        transition: all .3s ease-in-out;
+        &._animate{
+            opacity: 1;
+        }
 }

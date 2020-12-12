@@ -14,4 +14,24 @@ document.addEventListener('DOMContentLoaded', () => {
             header.classList.remove('header_active');
         }
 
+    // scroll animate
+    const scrollITems = document.querySelectorAll('.animate');
+    const scrollAnimation = () => {
+        let windowCenter = (window.innerHeight / 2) + window.scrollY;
+        scrollITems.forEach(element => {
+            let scrollOffset = element.offsetTop + (element.offsetHeight / 2);
+            if(windowCenter >= scrollOffset){
+                element.classList.add('_animate');
+            }else{
+                element.classList.remove('_animate');
+            }
+        });
+
+    }
+    scrollAnimation();
+    window.addEventListener('scroll', () => {
+        scrollAnimation();
+    });
+
+
 });

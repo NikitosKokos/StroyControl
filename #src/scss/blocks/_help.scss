@@ -4,6 +4,13 @@
     }
 
     &__title {
+        opacity: 0;
+        transform: translateY(-30px);
+        transition: all .3s ease-in-out;
+        &._animate{
+            opacity: 1;
+            transform: translateY(0px);
+        }
         font-size: 32px;
         max-width: 781px;
         line-height: 150%;
@@ -40,6 +47,13 @@
     &__text {
         @media (max-width: 600px){
             order: 2;
+        }
+        opacity: 0;
+        transform: translateX(-30px);
+        transition: all .3s ease-in-out;
+        &._animate{
+            opacity: 1;
+            transform: translateX(0px);
         }
     }
 
@@ -109,6 +123,13 @@
     }
 
     &__img {
+        opacity: 0;
+        transform: translateX(30px);
+        transition: all .3s ease-in-out;
+        &._animate{
+            opacity: 1;
+            transform: translateX(0px);
+        }
         @media (max-width: 600px){
             order: 1;
             margin: 0px 0px 25px 0px;
