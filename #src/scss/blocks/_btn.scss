@@ -1,7 +1,4 @@
-.buttons {
-    display: flex;
-    align-items: center;
-}
+
 .btn {
     height: 50px;
     padding: 0 25px;
@@ -43,6 +40,39 @@
             background: #212B31;
             border: 1px solid #212B31;
          }
+        }
+    }
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    &_light{
+        .btn{
+            &_dark{
+                color: #212B31;
+                background: $white;
+                border: 1px solid $white;
+                box-shadow: none;
+                @media (min-width: 992px){
+                    &:hover{
+                     color: $white;
+                     background: transparent;
+                  }
+                 }
+            }
+            &_light{
+                color: $white;
+                background: transparent;
+                border: 1px solid $white;
+                box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.16);
+                @media (min-width: 992px){
+                   &:hover{
+                    color: #212B31;
+                    background: $white;
+                 }
+                }
+            }
         }
     }
 }

@@ -102,10 +102,10 @@
     transition: all .3s ease-in-out;
     &._animate{
         &:nth-child(3n+2){
-            transition-delay: 0.2s;
+            transition-delay: 0.1s;
         }
         &:nth-child(3n+3){
-            transition-delay: 0.4s;
+            transition-delay: 0.2s;
         }
         opacity: 1;
         transform: translateY(0px);
