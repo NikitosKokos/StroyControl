@@ -5,6 +5,7 @@
 @import "./base/zeroing";
 @import "./base/ibg"; 
 @import "./base/burger"; 
+@import "./libs/swiper-bundle.min";
 
 // blocks
 @import "./blocks/header";
@@ -21,6 +22,8 @@
 @import "./blocks/delivery";
 @import "./blocks/reliability";
 @import "./blocks/statistics";
+@import "./blocks/work";
+@import "./blocks/comments";
 
 // global styles
 ._container {

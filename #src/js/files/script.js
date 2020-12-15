@@ -17,11 +17,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // scroll animate
     const scrollITems = document.querySelectorAll('.animate');
     const scrollAnimation = () => {
-        let windowCenter = (window.innerHeight / 2) + window.scrollY;
+        let windowCenter = (window.innerHeight / 1.2) + window.scrollY;
         scrollITems.forEach(element => {
             let scrollOffset = element.offsetTop + (element.offsetHeight / 2);
             if(windowCenter >= scrollOffset){
                 element.classList.add('_animate');
+            }else{
+                element.classList.remove('_animate');
             }
         });
 
@@ -30,6 +32,16 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', () => {
         scrollAnimation();
     });
+
+    let commentsSlider = new Swiper('.slider-comments__body', {
+        slideClass: 'slider-comments__slide',
+        slidesPerView: 1,
+        pagination: {
+          el: '.slider-comments__dotts',
+          clickable: true,
+        },
+  
+      })
 
 
 });
