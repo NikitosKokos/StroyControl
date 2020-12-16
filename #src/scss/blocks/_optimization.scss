@@ -19,6 +19,13 @@
         @media (max-width: $md3+px){
            height: 400px;
         }
+        opacity: 0;
+        transform: translateX(30px);
+        transition: all .3s ease-in-out;
+        &._animate{
+            opacity: 1;
+            transform: translateX(0px);
+        }
     }
 
     &__title {

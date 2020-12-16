@@ -25,8 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
             let scrollOffset = element.offsetTop + (element.offsetHeight / 2);
             if(windowCenter >= scrollOffset){
                 element.classList.add('_animate');
-            }else{
-                element.classList.remove('_animate');
             }
         });
 
